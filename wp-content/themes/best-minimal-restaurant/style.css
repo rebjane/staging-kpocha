@@ -219,13 +219,19 @@ p {
     min-height:100%;
 }
 
+ol li {
+    list-style: auto !important;
+    float: left;
+}
+
 
 .wc-block-grid__product {
     max-width: 100% !important;
     text-align: left !important;
     min-height:100%;
     column-fill: balance;
-    display: inline-block ;
+    display: inline-block ; 
+    /* this is getting rid of the OL */
     width: 100%;
     padding-left: 0 !important;
 }
@@ -316,7 +322,7 @@ footer, .footer_wrap {
     border-radius: 40px;
 }
 .colored {
-    background: #FF8C00;
+    background: #FFD700;
 }
 
 .wp-block-button__link, .wpcf7-submit {
