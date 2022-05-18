@@ -144,11 +144,19 @@ h1 {
     .wc-block-grid__products {
         column-count: 2;
     }
+    .footer_menu ul li, .footer_menu a {
+        display: block;
+        font-size: 20px !important;
+        margin-bottom: 15px;
+    }
 }
 
 /* Mobile –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 @media screen and (min-width: 601px) {
+    .wc-block-grid__product-image {
+        padding-top: 30px;
+    }
     .masonry .wp-block-column {
         flex-basis: 33% !important;
     }
@@ -160,24 +168,25 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
+    .wc-block-grid__product-image {
+        padding-top: 20px;
+    }
+    .wc-block-grid__product {
+        margin-bottom: 0 !important;
+    }
     .footerlogo {
         width: 80%;
     }
-    .footer_menu ul li {
-        display: block;
-    }
     
+/*     
     p {
         font-size: 14px !important;
-    }
+    } */
 
     .wc-block-grid__product-title {
         font-size: 18px !important;
     }
 
-    h2 {
-        font-size: 20px !important;
-    }
     h1 {
         font-size: 26px;
     }
@@ -210,9 +219,7 @@ p {
     min-height:100%;
 }
 
-.wc-block-grid__product-image {
-    padding-top: 30px;
-}
+
 .wc-block-grid__product {
     max-width: 100% !important;
     text-align: left !important;
@@ -220,6 +227,7 @@ p {
     column-fill: balance;
     display: inline-block ;
     width: 100%;
+    padding-left: 0 !important;
 }
 .wc-block-grid__product-desc p {
     line-height: 1.5 !important;
