@@ -1,13 +1,42 @@
 @charset "UTF-8";
+.page-id-174 p {
+    margin: 0;
+}
+.page-id-174 .wc-block-grid__product  {
+    margin-bottom: 15px;
+}
+.spicyness {
+    margin: 0;
+}
 
-
+.underline {
+    text-decoration: underline;
+}
 html {
     max-width: 100vw;
     overflow-x: hidden;
 }
 /* Rebecca's styles */
+.with_variation {
+    padding: 12px !important;
+    
+    overflow: hidden;
+}
+.variation li {
+    font-size: 14px;
+}
 
-
+.variation:after {
+    content: '';
+    position: absolute;
+    left: -0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFAAA;
+    z-index: -1;
+    border-radius: 20px;
+}
 .front {
     z-index: 10;
 }
@@ -64,7 +93,7 @@ h1 {
 /* Desktop –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 @media screen and (min-width: 1001px) {
     .wc-block-grid__product-title {
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
 
     h2 {
@@ -103,6 +132,9 @@ h1 {
 
 /* Tablet –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 @media screen and (min-width: 782px) {
+    .variation {
+        column-count: 2;
+    }
 
     .leftpad {
         padding-left: 10%;
@@ -135,7 +167,9 @@ h1 {
 
 
 @media screen and (max-width: 781px) {
-    
+    .variation {
+        column-count: 1;
+    }
 
     p, span, li {
         font-family: 'Caviar';
@@ -226,6 +260,7 @@ ol li {
 
 
 .wc-block-grid__product {
+    position: relative;
     max-width: 100% !important;
     text-align: left !important;
     min-height:100%;
@@ -233,6 +268,9 @@ ol li {
     display: inline-block ; 
     /* this is getting rid of the OL */
     width: 100%;
+    
+}
+.wc-block-grid__product:not(.with_variation) {
     padding-left: 0 !important;
 }
 .wc-block-grid__product-desc p {
@@ -303,7 +341,7 @@ footer, .footer_wrap {
 .wc-block-grid__product-title {
     font-family: 'Komika';
     font-size: 24px;
-    
+    margin-bottom: 10px;
 }
 .wc-block-grid__product-link {
     text-decoration: none !important;
