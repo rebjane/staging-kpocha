@@ -1,6 +1,13 @@
 @charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
 .page-id-174 p {
     margin: 0;
+}
+
+.wp-block-button {
+    margin: auto !important;
 }
 .page-id-174 .wc-block-grid__product  {
     margin-bottom: 15px;
