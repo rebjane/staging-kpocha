@@ -22,6 +22,9 @@ html {
     
     overflow: hidden;
 }
+.with_variation p {
+    margin-bottom: 20px;
+}
 .variation li {
     font-size: 14px;
 }
@@ -265,7 +268,9 @@ ol li {
     text-align: left !important;
     min-height:100%;
     column-fill: balance;
-    display: inline-block ; 
+    -webkit-column-break-inside:avoid;
+    break-inside:avoid;
+    /* display: inline-block ;  */
     /* this is getting rid of the OL */
     width: 100%;
     
