@@ -5,8 +5,14 @@ html {
 .page-id-174 p {
     margin: 0;
 }
-
-.wp-block-button {
+.page-id-174 h2 {
+    text-decoration: underline;
+    text-align: left !important;
+}
+.roundcorner img {
+    border-radius: 20px !important;
+}
+.anchorbuttons .wp-block-button {
     margin: auto !important;
 }
 .page-id-174 .wc-block-grid__product  {
@@ -103,7 +109,7 @@ h1 {
 /* Desktop –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 @media screen and (min-width: 1001px) {
     .wc-block-grid__product-title {
-        font-size: 20px !important;
+        font-size: 26px !important;
     }
 
     h2 {
@@ -142,9 +148,9 @@ h1 {
 
 /* Tablet –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 @media screen and (min-width: 782px) {
-    .variation {
+    /* .variation {
         column-count: 2;
-    }
+    } */
 
     .leftpad {
         padding-left: 10%;
@@ -166,7 +172,9 @@ h1 {
     }
     
     .has-3-columns .wc-block-grid__products {
-        column-count: 3;
+        /* column-count: 3; */
+        column-count: 1;
+
     }
     
     .has-2-columns .wc-block-grid__products {
@@ -185,9 +193,9 @@ h1 {
         font-family: 'Caviar';
         font-size: 16px;
     }
-    .wc-block-grid__products {
+    /* .wc-block-grid__products {
         column-count: 2;
-    }
+    } */
     .footer_menu ul li, .footer_menu a {
         display: block;
         font-size: 20px !important;
@@ -272,7 +280,9 @@ ol li {
 .wc-block-grid__product {
     position: relative;
     max-width: 100% !important;
+    /* text-align: left !important; */
     text-align: left !important;
+
     min-height:100%;
     column-fill: balance;
     -webkit-column-break-inside:avoid;
@@ -364,7 +374,7 @@ footer, .footer_wrap {
 .masonry .blocks-gallery-item {
     margin: 0 !important;
 }
-.masonry img, .shadow .slick-list, .uagb-google-map__iframe {
+.masonry img, .shadow .slick-list, .uagb-google-map__iframe, .shadow img {
     -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.4) !important; 
     box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.4) !important;
 }
