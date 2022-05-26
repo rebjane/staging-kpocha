@@ -2,6 +2,13 @@
 html {
     scroll-behavior: smooth;
 }
+
+.woocommerce-Price-amount {
+    /* background: lightgrey;
+    padding: 5px; */
+    
+    color: red;
+}
 .page-id-174 p {
     margin: 0;
 }
@@ -38,7 +45,7 @@ html {
 .with_variation p {
     margin-bottom: 20px;
 }
-.variation li {
+.variation li, .variation td, .variation .woocommerce-Price-amount {
     font-size: 14px;
 }
 
